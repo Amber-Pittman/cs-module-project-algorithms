@@ -4,9 +4,9 @@ Returns: an integer
 '''
 def single_number(arr):
     # Your code here
+    return 2 * sum(set(arr)) - sum(arr)
 
-    pass
-
+# Test passing fully
 
 if __name__ == '__main__':
     # Use the main function to test your implementation

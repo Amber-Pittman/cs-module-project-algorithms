@@ -2,10 +2,19 @@
 Input: a List of integers
 Returns: a List of integers
 '''
+def product_of_numbers(arr):
+    result = 1
+    for i in arr:
+        result = result * i
+    return result
+
 def product_of_all_other_numbers(arr):
     # Your code here
+    result = product_of_numbers(arr)
+    new_list = [result/i for i in arr]
+    return new_list
 
-    pass
+    # passing 1st test
 
 
 if __name__ == '__main__':
